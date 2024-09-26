@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +36,120 @@
 
 <body>
     <header>
+        <!-- navbar -->
+        <div class="container mx-auto lg:px-10 px-4 my-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu text-base menu-sm dropdown-content bg-base-100 rounded-box z-[1]  w-52 p-2 shadow breadcrumbs">
+                            <li><a class="text-red-500">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost font-extrabold text-2xl lg:text-4xl font-EB-Garamond px-2 lg:px-0">Hockey<span
+                            class="text-red-500">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <li><a class="text-red-500">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden lg:flex ">
+                        <a><i class="fa-solid fa-magnifying-glass fa-lg mr-3 lg:mr-6"></i></a>
+                    </div>
+                    <div>
+                        <a class="btn btn-error px-3 py-2 lg:px-7 text-manrope text-white border-none">Get Ticket</a>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <!-- slide section -->
+        <section>
+            <div class="container mx-auto lg:px-10 px-4 my-8">
+                <div class="carousel rounded-lg w-full">
+                    <!-- slide-1 -->
+                    <div id="slide1"
+                        class="carousel-item relative w-full lg:h-[80vh] bg-cover bg-center bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('./Images/1.png')]">
+                        <div class="absolute flex justify-between transform left-5 right-5 top-1/2 -translate-y-1/2">
+                            <a href="#slide3" class="btn btn-circle ">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                        <div>
+                            <div
+                                class="lg:flex flex-col hidden absolute bottom-4 right-4 bg-black lg:w-[565px] mx-auto  rounded-2xl p-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">Meet all the heroes from the field hockey
+                                        Ground</h3>
+                                </div>
+                                <div>
+                                    <p class="text-base text-gray-400 mt-5">Lifelong hockey lover, fascinated by the
+                                        sport’s speed and strategy, enjoys analyzing games and supporting favorite
+                                        teams.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide-2 -->
+                    <div id="slide2"
+                        class="carousel-item relative w-full h-[80vh] bg-cover bg-center bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('./Images/slide2.png')]">
+                        <div class="absolute flex justify-between transform left-5 right-5 top-1/2 -translate-y-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                        <div
+                            class="lg:flex flex-col hidden absolute bottom-4 right-4 bg-black lg:w-[565px] mx-auto  rounded-2xl p-6">
+                            <h3 class="text-2xl font-bold text-white">Dedicated hockey enthusiast, the sport closely
+                            </h3>
+                            <p class="text-base text-gray-400 mt-5">Hockey fanatic with a deep appreciation for teamwork
+                                and skill, regularly following the NHL and junior leagues.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- slide-3 -->
+                    <div id="slide3"
+                        class="carousel-item relative w-full h-[80vh] bg-cover bg-center bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('./Images/slide3.png')]">
+                        <div class="absolute flex justify-between transform left-5 right-5 top-1/2 -translate-y-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                        <div
+                            class="lg:flex flex-col hidden absolute bottom-4 right-4 bg-black lg:w-[565px] mx-auto  rounded-2xl p-6">
+                            <h3 class="text-2xl font-bold text-white">Passionate hockey fan with a love for the game
+                            </h3>
+                            <p class="text-base text-gray-400 mt-5">Hockey enthusiast, passionate about the sport’s
+                                history, players, and rivalries, always keeping up with the latest news.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex lg:hidden flex-col text-center bg-black rounded-2xl p-5">
+                        <h3 class="text-2xl font-bold text-white">Meet all the heroes from the field</h3>
+                        <p class="text-base text-gray-400 mt-4">Devoted hockey fan, loves the fast-paced action,
+                            strategic plays, and the thrill of playoff season each year.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
 
